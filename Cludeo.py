@@ -7,3 +7,4 @@ character_mur = random.randint(0,5)
 room_mur = random.randint(0,5)
 weapon_mur = random.randint(0,5)
 
+murderer = characters[character_mur]

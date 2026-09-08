@@ -8,3 +8,7 @@ def get_info():
     murder_room = rooms[random.randint(0,5)]
     murder_weapon = weapons[random.randint(0,5)]
 
+    print(murderer)
+    print(murder_room)
+    print(murder_weapon)
+

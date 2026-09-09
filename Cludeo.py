@@ -25,5 +25,13 @@ def assess_guess():
     print(count, " guesses correct")
 
 get_info()
-for i in range(10): #iteration to only give 10 guesses
+for i in range(0,10): #iteration to only give 10 guesses
     assess_guess()
+    if count = 3:
+        print("fully correct")
+        break
+    if i = 9:
+        print("you lost")
+        print(murderer)
+        print(murder_weapon)
+        print(murder_room)

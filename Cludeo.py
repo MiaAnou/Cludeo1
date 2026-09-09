@@ -15,7 +15,7 @@ def assess_guess():
     weapon_guess = input().lower()    
     room_guess = input().lower()
 
-    if character_guess == murderer:
+    if character_guess == murderer: #selection to assess the accuracy of guesses
         count = count + 1
     if weapon_guess == murder_weapon:
         count = count + 1
@@ -25,4 +25,5 @@ def assess_guess():
     print(count, " guesses correct")
 
 get_info()
-assess_guess()
+for i in range(10): #iteration to only give 10 guesses
+    assess_guess()

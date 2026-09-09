@@ -1,3 +1,4 @@
+from itertools import count
 import random
 characters = ("Professor Plum", "Mrs White","Mr Green", "Mrs Peacock", "Miss Scarlett", "Colonel Mustard")
 weapons = ("wrench", "candlestick","lead pipe", "rope", "revolver", "knife")
@@ -23,15 +24,15 @@ def assess_guess():
         count = count + 1
 
     print(count, " guesses correct")
-
-get_info()
-for i in range(0,10): #iteration to only give 10 guesses
-    assess_guess()
-    if count = 3:
-        print("fully correct")
-        break
-    if i = 9:
-        print("you lost")
-        print(murderer)
-        print(murder_weapon)
-        print(murder_room)
+while True:
+    get_info()
+    for i in range(0,10): #iteration to only give 10 guesses
+        assess_guess()
+        if count == 3:
+            print("fully correct")
+            break
+        if i == 9: 
+            print("you lost")
+            print(murderer)
+            print(murder_weapon)
+            print(murder_room)
